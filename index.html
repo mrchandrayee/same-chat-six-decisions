@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080f20"><title>Same Chat. Six Decisions.</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="app">
+<header class="site-head"><div class="mark">MOTION / UI INTERFACE</div><span>CHAT THREAD · LEVEL UP</span></header>
+<section class="intro"><p class="eyebrow">UPGRADE YOUR CHAT EXPERIENCE</p><h1>Same chat.<br><em>Six decisions.</em></h1><p class="sub">A conversation redesigned around the way people actually read.</p></section>
+<section class="toolbar">
+  <div class="mode-switch" role="group" aria-label="Compare chat design">
+    <button id="beforeBtn" class="mode">Before</button><button id="afterBtn" class="mode active">After</button>
+  </div>
+  <button id="resetBtn" class="reset">↺ Reset demo</button>
+</section>
+<section class="workspace">
+  <div class="chat-card" id="chatCard">
+    <div class="chat-header">
+      <button class="back" aria-label="Back">‹</button><div class="avatar">MC<span class="online-dot" id="onlineDot"></span></div>
+      <div class="person"><strong>Maya Chen</strong><small id="presence">online</small></div>
+      <button class="more" aria-label="More options">···</button>
+    </div>
+    <div class="messages" id="messages" aria-live="polite"></div>
+    <div class="typing" id="typing"><span></span><span></span><span></span><small>Maya is typing</small></div>
+    <form class="composer" id="composer"><input id="messageInput" placeholder="Message" maxlength="180" aria-label="Write a message"><button type="submit" aria-label="Send message" class="send">↑</button></form>
+  </div>
+  <div class="chat-caption"><span id="caption">AFTER · UPGRADE 01–06</span><strong id="bubbleCount">5 bubbles → 3 turns</strong></div>
+</section>
+<section class="upgrade-panel">
+  <div class="panel-title"><div><p class="eyebrow">THE SIX UPGRADES</p><h2>Small decisions.<br><em>Better conversations.</em></h2></div><span class="count">01 / 06</span></div>
+  <div class="upgrade-list" id="upgradeList">
+    <button class="upgrade active" data-upgrade="0"><b>01</b><span><strong>Alignment</strong><small>Yours right, theirs left. Names go.</small></span><i>✓</i></button>
+    <button class="upgrade" data-upgrade="1"><b>02</b><span><strong>Grouping</strong><small>4px in a run, 18px between turns.</small></span><i>✓</i></button>
+    <button class="upgrade" data-upgrade="2"><b>03</b><span><strong>Colour</strong><small>Accent bubbles, text at 8.3:1.</small></span><i>✓</i></button>
+    <button class="upgrade" data-upgrade="3"><b>04</b><span><strong>Timestamps</strong><small>5 stamps → 1 divider.</small></span><i>✓</i></button>
+    <button class="upgrade" data-upgrade="4"><b>05</b><span><strong>Status</strong><small>Online in the header, Read under the last.</small></span><i>✓</i></button>
+    <button class="upgrade" data-upgrade="5"><b>06</b><span><strong>Motion</strong><small>Typing dots, 240ms slide-in, sent → read.</small></span><i>✓</i></button>
+  </div>
+  <div class="upgrade-detail" id="upgradeDetail"><span>01 · UPGRADE</span><p>Messages from Maya stay on the left. Your messages move right. The side tells you who sent each message without repeating names.</p></div>
+</section>
+<section class="demo-actions"><button id="playSequence">▶ Play the six upgrades</button><span>Try sending a message in the chat above.</span></section>
+<footer><span>HTML · CSS · JAVASCRIPT</span><span>INTERACTION STUDY · 01:40</span></footer>
+</main>
+<script src="app.js"></script>
+</body></html>
